@@ -1,13 +1,11 @@
 #!/usr/bin/make -f
 
-DEB_AUTO_UPDATE_AUTOCONF = 2.50
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/autotools.mk
+%:
+        dh --with-python2 $@
 
-DEB_CONFIGURE_EXTRA_FLAGS += lsbindir=/sbin
+override_dh_fixperms:
+	dh_fixperms
+	chmod 755 debian/debathena-athinfod/usr/lib/athinfod/is_cluster
 
-clean::
-	rm -f configure
-
-binary-fixup/debathena-athinfod::
-	chmod 755 debian/$(cdbs_curpkg)/usr/lib/athinfod/is_cluster
+override_dh_auto_install:
+        dh_auto_install -- --install-scripts=/sbin

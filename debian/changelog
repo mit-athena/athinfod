@@ -1,3 +1,11 @@
+debathena-athinfod (10.2-0debathena1) UNRELEASED; urgency=low
+
+  * Switch to Python implementation of athinfod from Kristen Sunter
+  * Switch to arch-indep package
+  * Switch to dh7
+
+ -- Jonathan Reed <jdreed@mit.edu>  Fri, 28 Feb 2014 12:59:45 -0500
+
 debathena-athinfod (10.1-0debathena3) UNRELEASED; urgency=low
 
   * Switch from control.in to control (Trac: #561)
