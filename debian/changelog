@@ -1,10 +1,12 @@
-debathena-athinfod (10.2-0debathena1) UNRELEASED; urgency=low
+debathena-athinfod (10.2-0debathena1) unstable; urgency=low
 
   * Switch to Python implementation of athinfod from Kristen Sunter
   * Switch to arch-indep package
   * Switch to dh7
+  * Add git-buildpackage configuration
+  * Set source format to 3.0 (quilt)
 
- -- Jonathan Reed <jdreed@mit.edu>  Fri, 28 Feb 2014 12:59:45 -0500
+ -- Jonathan Reed <jdreed@mit.edu>  Fri, 28 Feb 2014 13:02:38 -0500
 
 debathena-athinfod (10.1-0debathena3) UNRELEASED; urgency=low
 
