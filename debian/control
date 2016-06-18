@@ -2,7 +2,7 @@ Source: debathena-athinfod
 Section: debathena/net
 Priority: extra
 Maintainer: Debathena Project <debathena@mit.edu>
-Build-Depends: debhelper (>= 7.0.50~), dh-buildinfo, python, python-support
+Build-Depends: debhelper (>= 7.0.50~), dh-python, python2.7
 Standards-Version: 3.9.3
 
 Package: debathena-athinfod
@@ -10,6 +10,7 @@ Architecture: all
 Provides: athinfod
 Conflicts: debathena-athena-files (<= 0.1.2)
 Depends: ${python:Depends}, ${misc:Depends}, netbase, openbsd-inetd | inet-superserver, debathena-machtype
+X-Python-Version: 2.7
 Description: Athena server to respond to athinfo requests
  Respond to network queries for information about the workstation, such 
  as its hardware type and configuration, its current software 
